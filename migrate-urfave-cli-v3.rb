@@ -6,21 +6,21 @@ class MigrateUrfaveCliV3 < Formula
   desc "Migrate github.com/urfave/cli/v2 to v3
 "
   homepage "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.1/migrate-urfave-cli-v3_darwin_amd64.tar.gz"
-      sha256 "00f9cd61b9ead7df2fb02a618f7ad4becd1f149f5cddb4e52c9a86dfe6d03733"
+      url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.2/migrate-urfave-cli-v3_darwin_amd64.tar.gz"
+      sha256 "83d2c939749e7226686f1a0cc94effd4f5555b23fd7fde6e5cdd66d5d19c3f05"
 
       def install
         bin.install "migrate-urfave-cli-v3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.1/migrate-urfave-cli-v3_darwin_arm64.tar.gz"
-      sha256 "7830c08e3b07ddc53cadc89126705a2b19f6d2666d32718d0500e9a289dd4de2"
+      url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.2/migrate-urfave-cli-v3_darwin_arm64.tar.gz"
+      sha256 "a33439daa6f31b261bc49cb2fce87427966718ac2d0f4cf2b0e93253f40e1630"
 
       def install
         bin.install "migrate-urfave-cli-v3"
@@ -31,8 +31,8 @@ class MigrateUrfaveCliV3 < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.1/migrate-urfave-cli-v3_linux_amd64.tar.gz"
-        sha256 "4b585e2fd9958f6295f1c30f280f778d24421f1f9d010d5f141e4cecd3509f42"
+        url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.2/migrate-urfave-cli-v3_linux_amd64.tar.gz"
+        sha256 "1f5e5c1ebbae41c7a82fb7d9f4dfc286436d3bb632c23749cf4ac584b1bbf998"
 
         def install
           bin.install "migrate-urfave-cli-v3"
@@ -41,8 +41,8 @@ class MigrateUrfaveCliV3 < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.1/migrate-urfave-cli-v3_linux_arm64.tar.gz"
-        sha256 "481a5c655495d9a3c183207cdb8339ecd7668544021e9c80e54d743049764ca0"
+        url "https://github.com/suzuki-shunsuke/migrate-urfave-cli-v3/releases/download/v0.1.2/migrate-urfave-cli-v3_linux_arm64.tar.gz"
+        sha256 "9dd5b129ea050b3f3c959c3f3b1e00cf5d2be7b6513f384357304ded343f85f3"
 
         def install
           bin.install "migrate-urfave-cli-v3"
